@@ -4,7 +4,7 @@ import pathlib
 import glob
 import shutil
 
-output_dir = "C:\\Users\\bje13981\\Desktop\\out1" #生成したXMLファイルの移動先フォルダ
+output_dir = "C:\\Users\\USRE NAME\\Desktop\\out1" #生成したXMLファイルの移動先フォルダ
 
 path = pathlib.Path(".\CSV_FluxXMLConvertor")  #CSVファイル保存先フォルダのパスを指定
 for pass_obj in path.iterdir():
