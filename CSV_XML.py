@@ -1,10 +1,10 @@
-import pandas as pd
-import codecs
-import pathlib
-import glob
-import shutil
+import pandas as pd #外部ライブラリ
+import codecs #標準ライブラリ
+import pathlib #標準ライブラリ
+import glob #標準ライブラリ
+import shutil #標準ライブラリ
 
-output_dir = "C:\\Users\\USRE NAME\\Desktop\\out1" #生成したXMLファイルの移動先フォルダ
+output_dir = "C:\\Users\\USRE_NAME\\Desktop\\out1" #生成したXMLファイルの移動先フォルダ
 
 path = pathlib.Path(".\CSV_FluxXMLConvertor")  #CSVファイル保存先フォルダのパスを指定
 for pass_obj in path.iterdir():
@@ -25,7 +25,7 @@ for pass_obj in path.iterdir():
                 "<quantity>" + str(data.数量) + "</quantity> <!-- 印刷数量 -->\n"
                 "<document>\n"
                 "<product>\n"
-                "<name>" + str(data.仕様) + "</name> <!-- Fluxプリント商材名 -->\n"
+                "<name>" + str(data.仕様) + "</name> <!-- プリント商材名 -->\n"
                 "<services>\n"
                 "<service id=\"PAPERTYPE\">\n"
                 "<option>\n"
